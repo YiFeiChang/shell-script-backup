@@ -9,7 +9,7 @@ fi
 # 更新系統套件
 echo "更新系統套件..."
 dnf update -y
-dnf install -y chrony cockpit
+dnf install tar chrony cockpit -y
 
 echo "啟用 cockpit.socket"
 systemctl enable cockpit.socket
